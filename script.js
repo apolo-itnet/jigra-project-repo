@@ -1,0 +1,71 @@
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-Popup');
+const iconClose = document.querySelector('.icon-close');
+
+registerLink.addEventListener('click', ()=>{
+  wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=>{
+  wrapper.classList.remove('active');
+});
+
+btnPopup.addEventListener('click', ()=>{
+  wrapper.classList.add('active-popup');
+});
+
+iconClose.addEventListener('click', ()=>{
+  wrapper.classList.remove('active-popup');
+});
+
+
+
+/* const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-r');
+const hiddenElements = document.querySelectorAll('.hidden-l');
+hiddenElements.forEach((el) => observer.observe(el)); */
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('hidden-r')) {
+        entry.target.classList.add('show-r');
+      } else if (entry.target.classList.contains('hidden-l')) {
+        entry.target.classList.add('show-l');
+      } else if (entry.target.classList.contains('hidden-u')){
+        entry.target.classList.add('show-u');
+      } else if (entry.target.classList.contains('hidden-d')){
+        entry.target.classList.add('show-d');
+      }
+    } else {
+      entry.target.classList.remove('show-r', 'show-l', 'show-u', 'show-d');
+    }
+  });
+});
+
+const hiddenElementsRight = document.querySelectorAll('.hidden-r');
+const hiddenElementsLeft = document.querySelectorAll('.hidden-l');
+const hiddenElementsUp = document.querySelectorAll('.hidden-u');
+const hiddenElementsDown = document.querySelectorAll('.hidden-d');
+
+
+hiddenElementsRight.forEach((el) => observer.observe(el));
+hiddenElementsLeft.forEach((el) => observer.observe(el));
+hiddenElementsUp.forEach((el) => observer.observe(el));
+hiddenElementsDown.forEach((el) => observer.observe(el));
+
+

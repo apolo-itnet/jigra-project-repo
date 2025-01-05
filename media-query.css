@@ -1,0 +1,89 @@
+  /* ? <-- Screen Size Tab- 1366*768 -->  */
+
+  @media (width <= 1367px) {
+
+ /* ? <-- Hero Section -->  */
+    
+    
+ /* ? <-- About Section -->  */
+
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+
+     .image img {
+      width: 100% ;
+     }
+
+     .about-content {
+      width: 40%;
+     }
+    }
+
+
+ /* ? <-- Card (Plan) Section -->  */
+
+    .card-section {
+
+      align-items: center;
+
+      .card-heading {
+        padding: 0rem 0rem 3rem 0rem ;
+
+        h3{
+          padding: .5rem;
+        }
+      }
+
+      .card-container {
+        padding: .5rem 6rem;
+        display: flex;
+        justify-content: space-around;
+
+        .card-1,.card-2,.card-3,.card-4 { 
+          width: 270px;
+          height: 360px;
+        }
+      }
+
+
+    }
+
+ /* ? <-- Food Section -->  */
+
+ .food-section {
+  
+  gap: 1.5rem;
+  align-content: center;
+
+  .food-content {
+
+    h3{
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .price {
+        font-weight: 600;
+    }
+
+    img {
+      padding-top: .5rem;
+    }
+
+  }
+
+
+ }
+
+ /* ? <-- Service Section -->  */
+
+ 
+
+
+  }
