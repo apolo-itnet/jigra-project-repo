@@ -80,3 +80,33 @@ hiddenElementsDown.forEach((el) => observer.observe(el));
     }
   });
 
+
+   window.addEventListener('scroll', function () {
+    const shopSection = document.querySelector('.shop-section');
+    const sectionTop = shopSection.offsetTop; // Get the top position of the section
+    const scrollPosition = window.scrollY;
+
+    // Trigger the zoom effect when the shop section comes into view
+    if (scrollPosition > sectionTop - window.innerHeight && scrollPosition < sectionTop + shopSection.offsetHeight) {
+      shopSection.classList.add('scrolled');
+    } else {
+      shopSection.classList.remove('scrolled');
+    }
+  });
+  
+
+/*  window.addEventListener('scroll', function() {
+    const shopSection = document.querySelector('.shop-section');
+    const sectionTop = shopSection.offsetTop;
+    const sectionHeight = shopSection.offsetHeight;
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    if (scrollPosition > sectionTop && scrollPosition < sectionTop + sectionHeight + window.innerHeight ) {
+      const progress = (scrollPosition - sectionTop) / (sectionHeight + window.innerHeight);
+      const zoomLevel = 1 + progress * 0.2;
+      shopSection.style.backgroundSize = '${100 * zoomLevel}%';
+    } else {
+      shopSection.style.backgroundSize = '100%';
+    }
+ });
+ */

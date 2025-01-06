@@ -34,6 +34,10 @@
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 30px 0px;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 
 html {
   font-size: 90%;
@@ -942,16 +946,20 @@ header {
 .shop-section {
   min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  background: url(/img/section/shop-bg-1.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: color;
   position: relative;
+  background: url(/img/section/shop-bg-1.webp) no-repeat center center;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
   scroll-margin-top: -55px ;
+  transition: background-size 10s ease;
 }
 
+.shop-section.scrolled {
+  background-size: 140%;
+}
 
 .shop-section::before {
   content: "";
@@ -967,7 +975,7 @@ header {
 
 .shop-centent {
   position: relative;
-  width: 60rem;
+  width: 70rem;
   text-align: center;
   padding: 2rem;
   z-index: 2;
@@ -1004,6 +1012,7 @@ header {
 .footer-csp{
   min-height: 45vh;
   padding: 1rem 6rem;
+  margin-top: 6rem;
 
   .csp-container{
     display: flex;
