@@ -183,6 +183,11 @@ header {
   padding: 0;
   margin: 0;
 
+  .login-icon {
+    color: var(--white-color);
+
+  }
+
   div,a:hover{
     color: var(--carrot-color)
   }
@@ -447,6 +452,7 @@ header {
   align-items: center;
   gap: 5rem;
   padding: 0 6rem;
+  scroll-margin-top: -55px ;
 
   .image{
     flex: 1 1 40rem;
@@ -848,100 +854,7 @@ header {
 
 }
 
-.cart-section {
-  min-height: 100vh;
 
-  .shop-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 0 1.5rem 0 ;
-
-    h3{
-      font-size: 3rem;
-      color: var(--black-color);
-      line-height: 1.2;
-      padding-bottom: 1rem;
-  
-      span{
-        color: var(--carrot-color);
-      }
-    }
-
-    p{
-      width: 40%;
-      font-size: 1rem;
-      color: var(--black-color);
-      font-weight: 400;
-    }
-
-  }
-
-  .shop-container {
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)) ;
-  align-items: center;
-  text-align: center;
-  padding: 0 6rem;
-  gap: 1rem;
-  
-    .card-1,.card-2,.card-3,.card-4{
-      height: 38.5rem;
-      background-color: var(--secondary-color);
-      padding: 1rem;
-      border-radius: 2rem;
-      transition: transform 0.3s ease-in-out;
-      overflow: hidden;
-
-      &:hover{
-        transform: scale(1.03);
-      }
-      
-      img {
-        width: 100%;
-        border-radius: 1rem;
-      }
-
-      .btn {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        padding: .8rem .5rem;
-        width: 11.5rem;
-        height: 3.15rem;
-        gap: .5rem;
-        margin: 0;
-        border: 1.5px solid var(--carrot-color);
-        color: var(--black-color);
-        border-radius: 2rem;
-        font-size: .8rem;
-
-
-        &:hover{
-          color: var(--white-color);
-        }
-
-        .cart-icon {
-          font-size: 1.5rem;
-        }
-      }
-
-      .card-content{
-        padding: 0 .8rem 1rem .8rem;
-        
-        h3{
-          font-size: 1.1rem;
-          padding: .6rem;  
-        }
-        p {
-          font-size: .9rem;
-        }
-      }
-    }
-  }
-}
 
 .shop-section {
   min-height: 100vh;
@@ -1006,6 +919,8 @@ header {
     }
     }
 }
+
+
 
 
 
@@ -1168,4 +1083,163 @@ footer {
     }
   }
 
+}
+
+/* shop page section  */
+
+.shop-home {
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/section/shop-bg-2.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .home-content {
+    width: 50rem;
+    text-align: center;
+    
+    h3{
+      font-size: 6rem;
+      color: var(--white-color);
+      line-height: 7rem;
+      padding-bottom: 3rem;
+      text-align: center;
+
+      span {
+        color: var(--carrot-color);
+      }
+    }
+  }
+
+  .custom-shape-divider-bottom-1735574306 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1735574306 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1735574306 .shape-fill {
+    fill: #fff;
+}
+}
+
+.shop-home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, .4);
+  backdrop-filter: blur(4px);
+}
+
+.cart-section {
+  scroll-margin-top: -30px;
+  padding-top: 4rem;
+
+  .shop-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 1.5rem 0 ;
+
+    h3{
+      font-size: 3rem;
+      color: var(--black-color);
+      line-height: 1.2;
+      padding-bottom: 1rem;
+  
+      span{
+        color: var(--carrot-color);
+      }
+    }
+
+    p{
+      width: 40%;
+      font-size: 1rem;
+      color: var(--black-color);
+      font-weight: 400;
+    }
+
+  }
+
+  .shop-container {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)) ;
+  align-items: center;
+  text-align: center;
+  padding: 0 6rem;
+  gap: 1rem;
+  
+    .card-design{
+      height: 36.5rem;
+      background-color: var(--secondary-color);
+      padding: 1rem;
+      border-radius: 2rem;
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.03);
+      }
+      
+      img {
+        width: 90%;
+        border-radius: 1rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .8rem .5rem;
+        width: 11.5rem;
+        height: 3.15rem;
+        gap: .5rem;
+        margin: 0;
+        border: 1.5px solid var(--carrot-color);
+        color: var(--black-color);
+        border-radius: 2rem;
+        font-size: .8rem;
+
+
+        &:hover{
+          color: var(--white-color);
+        }
+
+        .cart-icon {
+          font-size: 1.5rem;
+        }
+      }
+
+      .card-content{
+        padding: 0 .8rem 1rem .8rem;
+        
+        h3{
+          font-size: 1.1rem;
+          padding: .6rem;  
+        }
+        p {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
 }

@@ -1,13 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jigra</title>
   
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-query.css">
-
+  <link rel="stylesheet" href="/style.css">
+  
 </head>
 <body>
   <header class="navbar">
@@ -26,14 +24,94 @@
     <div class="nav-icons">
       <div class="menu-bar" id="menu-btn"><ion-icon name="menu"></ion-icon></div>
       <a class="cart"><ion-icon name="cart"></ion-icon></a>
-      <div class="btnLogin-Popup"><ion-icon name="person-add"></ion-icon></div>
+      <a href="#home" class="btnLogin-Popup login-icon"><ion-icon name="person-add"></ion-icon></a>
     </div>
       
   </header>
 
+<!-- home section starts  -->
+
+<section class="shop-home" id="home">
+
+  <div class="home-content hidden-d">
+    <h3><span>Hi PET's </span> <br> Whole Nutrition in Every Bite</h3>
+  </div>
+
+  <div class="custom-shape-divider-bottom-1735574306">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<div class="wrapper">
+  <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="">
+              <input type="checkbox" id="remember-me"> Remember Me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn" >Login</button>
+          <div class="login-register">
+            <p>Don't have an account? 
+              <a href="#" class="register-link ">Register</a></p>
+          </div>
+      </form>
+    </div>
+    
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required>
+            <label for="">Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label for="">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="">
+              <input type="checkbox" id="remember-me"> I agree to the terms & conditions
+            </label>
+          </div>
+          <button type="submit" class="btn" >Register</button>
+          <div class="login-register">
+            <p>Already have an account? 
+              <a href="#" class="login-link ">Login</a></p>
+          </div>
+      </form>
+    </div>   
+</div>
+
+</section>
+
+<!-- home section ends  -->
+
+
 <!-- cart section start -->
 
-<section class="cart-section" id="shop">
+<section class="shop-page cart-section" id="shop">
 
   <div class="shop-heading">
     <h3 class="hidden-u"> All Your Pet's Needs For <span>JIGRA</span> Shop  </h3>
@@ -42,7 +120,7 @@
 
   <div class="shop-container">
 
-  <div class="card-1 hidden-l">
+  <div class="card-design card-1 hidden-l">
     <div class="img">
       <img src="/img/product/dog/product-1.jpg" alt="">
     </div>
@@ -54,7 +132,7 @@
 
   </div>
 
-  <div class="card-2 hidden-l">
+  <div class="card-design card-2 hidden-l">
     <div class="img">
       <img src="/img/product/dog/product-2.jpg" alt="">
     </div>
@@ -67,7 +145,7 @@
 
   </div>
 
-  <div class="card-3 hidden-l">
+  <div class="card-design card-3 hidden-l">
     <div class="img">
       <img src="/img/product/dog/product-3.jpg" alt="">
     </div>
@@ -80,7 +158,57 @@
 
   </div>
 
-  <div class="card-4 hidden-l">
+  <div class="card-design card-4 hidden-l">
+    <div class="img">
+      <img src="/img/product/dog/product-4.png" alt="">
+    </div>
+    <div class="card-content">
+      <h3>Fromm Family</h3>
+      <p>Tastefully prepared with a balanced blend of select proteins and wholesome ingredients for adult dogs.</p>
+    </div>
+    <a href="" class="btn">Add to Cart <ion-icon name="cart" class="cart-icon"></ion-icon> </a>
+
+  </div>
+
+  <div class="card-design card-5 hidden-l">
+    <div class="img">
+      <img src="/img/product/dog/product-1.jpg" alt="">
+    </div>
+    <div class="card-content">
+      <h3>Air Dried Beef</h3>
+      <p>Children are living with disease, old age and children, and they are suffering from hunger and poverty. </p>
+    </div>
+    <a href="" class="btn">Add to Cart <ion-icon name="cart" class="cart-icon"></ion-icon> </a>
+
+  </div>
+
+  <div class="card-design card-6 hidden-l">
+    <div class="img">
+      <img src="/img/product/dog/product-2.jpg" alt="">
+    </div>
+    <div class="card-content">
+      <h3>Air Dried Lamb</h3>
+      <!-- <p>Children are living with disease, old age and children, and they are suffering from hunger and poverty. The vestibulum tortor quam, feugiat vitae, needs ultricies, the time must be before. Until then, free football is more important than ever. Aenean is the enemy of my life. Mauris investrat eleifend leo.</p> -->
+      <p>Children are living with disease, old age and children, and they are suffering from hunger and poverty. </p>
+    </div>
+    <a href="" class="btn">Add to Cart <ion-icon name="cart" class="cart-icon"></ion-icon> </a>
+
+  </div>
+
+  <div class="card-design card-7 hidden-l">
+    <div class="img">
+      <img src="/img/product/dog/product-3.jpg" alt="">
+    </div>
+    <div class="card-content">
+      <h3>Air Dried Salmon</h3>
+      <!-- <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p> -->
+      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p>
+    </div>
+    <a href="" class="btn">Add to Cart <ion-icon name="cart" class="cart-icon"></ion-icon> </a>
+
+  </div>
+
+  <div class="card-design card-8 hidden-l">
     <div class="img">
       <img src="/img/product/dog/product-4.png" alt="">
     </div>
@@ -98,28 +226,6 @@
 </section>
 
 <!-- cart section end -->
-
-<!-- cart section start -->
-
-<section class="footer-csp">
-  <div class="csp-container">
-    <div class="csp-col-1">
-      <img src="/img/csp-icon/icon-dog.svg" alt="">
-      <h3>CANINE CARE</h3>
-      <p>We will take care of your canines every need by managing their diets, play time and medication if required.</p>
-    </div>
-    <div class="csp-col-2">
-      <img src="/img/csp-icon/icon-kennel.svg" alt="">
-      <h3> SPECIAL TREATMENT</h3>
-      <p>Treats and special requests are welcome as we love bonding with your pets as much as you do.</p>
-    </div>
-    <div class="csp-col-3">
-      <img src="/img/csp-icon/icon-paw.svg" alt="">
-      <h3>JIGRA COMFORT</h3>
-      <p>You are welcome to visit the pet accommodation at any time, during office hours, to make sure your pampered pet will be comfortable in our environment.</p>
-    </div>
-  </div>
-</section>
 
 
 
@@ -141,7 +247,7 @@
       <div class="operating-hours">
         <h3>Operating Hours</h3>
         <p>Sun - Thus : 9:00 AM - 10:00 PM</p>
-        <p>Fri, Sat & Public Holidays: <span>JIGRA</span> Pet shop Closed (Only kennel ick-up/drop off)</p>
+        <p>Fri, Sat & Public Holidays: <span>JIGRA</span> Pet Shop Closed (Only kennel ick-up/drop off)</p>
         <p>Office  Hours: Sun-Thus: 9:00 AM - 5:00 PM</p>
       </div>
 
