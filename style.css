@@ -1000,12 +1000,19 @@ footer {
         }
         
         .social-icon {
-          font-size: 2rem;
-          width: 2rem;
           display: flex;
           justify-content: flex-start;
           align-items: center;
           gap: 1rem;
+          
+          a i {
+            width: 3rem;
+            aspect-ratio: 1;
+            font-size: 1.5rem;
+            color: var(--carrot-color);
+        
+
+          }
         }
 
       }
