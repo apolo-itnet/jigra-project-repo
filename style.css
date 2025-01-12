@@ -862,7 +862,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(/img/section/shop-bg-1.webp) no-repeat center center;
+  background: url(img/section/shop-bg-1.webp) no-repeat center center;
   background-size: 100%;
   background-attachment: fixed;
   background-position: center;
