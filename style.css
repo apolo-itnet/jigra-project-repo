@@ -402,7 +402,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/img/hero-bg/home-bg-img.jpg) no-repeat;
+  background: url(img/hero-bg/home-bg-img.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -921,9 +921,6 @@ header {
 }
 
 
-
-
-
 .footer-csp{
   min-height: 45vh;
   padding: 1rem 6rem;
@@ -1100,7 +1097,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/img/section/shop-bg-2.webp) no-repeat;
+  background: url(img/section/shop-bg-1.webp) no-repeat;
   background-size: cover;
   background-position: center;
 
